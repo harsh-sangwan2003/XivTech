@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 const weatherRoute = require('./routes/weather.route');
 
 const app = express();
+app.use(express.json());
 dotenv.config();
 
 app.use('/api',weatherRoute);

@@ -10,7 +10,7 @@ router.post('/getWeather', async (req, res) => {
 
         const weatherData = {};
         const requests = cities.map(async (city) => {
-            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=6227a88e2f2ae7f485e5fff2e2f80e8b`;
             const response = await fetch(apiUrl);
             const data = await response.json();
             if (response.ok) {
